@@ -15,6 +15,7 @@ pipeline {
                ./build.sh
             '''
          }
+      }
          stage('test') {
          steps {
             echo "This is build number $BUILD_NUMBER of demo $DEMO"
@@ -24,6 +25,5 @@ pipeline {
                ./test.sh
             '''
          }   
-      }
-   }
+      }   
 }
